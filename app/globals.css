@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-farmhouse-white text-farmhouse-dark font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-farmhouse-brown text-farmhouse-cream font-semibold py-3 px-8 rounded-none transition-all duration-300 hover:bg-farmhouse-dark tracking-wide uppercase text-sm;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-farmhouse-brown text-farmhouse-brown font-semibold py-3 px-8 rounded-none transition-all duration-300 hover:bg-farmhouse-brown hover:text-farmhouse-cream tracking-wide uppercase text-sm;
+  }
+
+  .btn-cream {
+    @apply inline-flex items-center justify-center gap-2 bg-farmhouse-cream text-farmhouse-brown font-semibold py-3 px-8 rounded-none transition-all duration-300 hover:bg-farmhouse-beige tracking-wide uppercase text-sm;
+  }
+
+  .section-heading {
+    @apply font-serif text-4xl md:text-5xl text-farmhouse-dark leading-tight;
+  }
+
+  .section-subheading {
+    @apply text-farmhouse-muted text-lg font-light tracking-wide;
+  }
+
+  .card-farmhouse {
+    @apply bg-white border border-farmhouse-beige overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .input-field {
+    @apply w-full border border-farmhouse-beige bg-farmhouse-cream text-farmhouse-dark px-4 py-3 focus:outline-none focus:border-farmhouse-brown transition-colors;
+  }
+
+  .badge-available {
+    @apply inline-flex items-center px-3 py-1 text-xs font-semibold bg-green-50 text-green-700 border border-green-200;
+  }
+
+  .badge-pending {
+    @apply inline-flex items-center px-3 py-1 text-xs font-semibold bg-yellow-50 text-yellow-700 border border-yellow-200;
+  }
+
+  .badge-booked {
+    @apply inline-flex items-center px-3 py-1 text-xs font-semibold bg-red-50 text-red-700 border border-red-200;
+  }
+
+  .divider-ornament {
+    @apply flex items-center gap-4 my-4;
+  }
+
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: '';
+    @apply flex-1 h-px bg-farmhouse-beige;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
+
+  .bg-overlay-dark {
+    background: linear-gradient(to bottom, rgba(44,26,14,0.3), rgba(44,26,14,0.7));
+  }
+
+  .bg-overlay-light {
+    background: linear-gradient(to bottom, rgba(44,26,14,0.1), rgba(44,26,14,0.5));
+  }
+}
