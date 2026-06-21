@@ -1,5 +1,6 @@
 export const dynamic = 'force-dynamic'
 import type { Metadata } from 'next'
+import { headers } from 'next/headers'
 import { getServerSession } from 'next-auth'
 import { redirect } from 'next/navigation'
 import { authOptions } from '@/lib/auth'
@@ -18,6 +19,14 @@ export default async function AdminLayout({
 }: {
   children: React.ReactNode
 }) {
+  const headersList = await headers()
+  const pathname = headersList.get('x-pathname') ?? ''
+
+  // Login page must not trigger the session check — that causes the redirect loop
+  if (pathname === '/admin/login') {
+    return <>{children}</>
+  }
+
   const session = await getServerSession(authOptions)
 
   if (!session) {
@@ -28,9 +37,8 @@ export default async function AdminLayout({
     <div className="min-h-screen bg-farmhouse-cream">
       <AdminSidebar />
       <div className="lg:ml-60">
-        {/* Top bar */}
         <header className="bg-white border-b border-farmhouse-beige px-6 py-4 flex items-center justify-between sticky top-0 z-30">
-          <div className="lg:hidden w-10" /> {/* spacer for mobile menu */}
+          <div className="lg:hidden w-10" />
           <div />
           <div className="flex items-center gap-3">
             <div className="text-right hidden sm:block">
