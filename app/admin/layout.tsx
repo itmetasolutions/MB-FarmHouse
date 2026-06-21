@@ -5,6 +5,7 @@ import { getServerSession } from 'next-auth'
 import { redirect } from 'next/navigation'
 import { authOptions } from '@/lib/auth'
 import AdminSidebar from '@/components/admin/AdminSidebar'
+import AdminHeader from '@/components/admin/AdminHeader'
 
 export const metadata: Metadata = {
   title: {
@@ -22,7 +23,6 @@ export default async function AdminLayout({
   const headersList = await headers()
   const pathname = headersList.get('x-pathname') ?? ''
 
-  // Login page must not trigger the session check — that causes the redirect loop
   if (pathname === '/admin/login') {
     return <>{children}</>
   }
@@ -34,22 +34,10 @@ export default async function AdminLayout({
   }
 
   return (
-    <div className="min-h-screen bg-farmhouse-cream">
+    <div className="min-h-screen bg-[#F5F3EF]">
       <AdminSidebar />
-      <div className="lg:ml-60">
-        <header className="bg-white border-b border-farmhouse-beige px-6 py-4 flex items-center justify-between sticky top-0 z-30">
-          <div className="lg:hidden w-10" />
-          <div />
-          <div className="flex items-center gap-3">
-            <div className="text-right hidden sm:block">
-              <p className="text-farmhouse-dark text-sm font-medium">{session.user?.name}</p>
-              <p className="text-farmhouse-muted text-xs">{session.user?.email}</p>
-            </div>
-            <div className="w-9 h-9 bg-farmhouse-brown flex items-center justify-center text-farmhouse-cream font-serif font-bold text-sm">
-              {session.user?.name?.charAt(0) ?? 'A'}
-            </div>
-          </div>
-        </header>
+      <div className="lg:ml-64">
+        <AdminHeader userName={session.user?.name} userEmail={session.user?.email} />
         <main className="p-6 lg:p-8">
           {children}
         </main>
