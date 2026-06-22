@@ -38,7 +38,7 @@ export default function HeroBanner() {
               <span className="text-farmhouse-tan italic">Celebration</span><br />
               Becomes a Memory
             </h1>
-            <p className="hidden lg:block text-farmhouse-beige/90 text-lg md:text-xl font-light leading-relaxed max-w-xl">
+            <p className="text-farmhouse-beige/90 text-sm lg:text-xl font-light leading-relaxed max-w-xl mb-3 lg:mb-0">
               Four exclusive farmhouse venues set in the heart of South Africa&apos;s countryside.
               Crafted for events, pool parties, weddings, and unforgettable gatherings.
             </p>
