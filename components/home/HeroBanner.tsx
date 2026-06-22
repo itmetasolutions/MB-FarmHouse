@@ -25,7 +25,7 @@ export default function HeroBanner() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-10">
         <div className="flex items-center justify-between gap-8 xl:gap-16">
           {/* Left: Text */}
           <div className="max-w-2xl">
