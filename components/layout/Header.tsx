@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -47,13 +48,16 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex flex-col leading-none">
-          <span className="font-serif text-2xl font-bold text-farmhouse-cream tracking-wider">
-            MB FARMHOUSE
-          </span>
-          <span className="text-farmhouse-tan text-xs tracking-[0.3em] uppercase font-light">
-            Premium Venues
-          </span>
+        <Link href="/" className="block bg-white rounded-xl px-3 py-1.5">
+          <Image
+            src="/logo.webp"
+            alt="MB Farmhouse"
+            width={0}
+            height={0}
+            sizes="200px"
+            style={{ width: 'auto', height: '40px' }}
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

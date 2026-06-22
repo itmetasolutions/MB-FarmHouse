@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { signOut } from 'next-auth/react'
 import {
@@ -12,7 +13,6 @@ import {
   Menu,
   X,
   ExternalLink,
-  TreePine,
   ChevronRight,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -33,14 +33,19 @@ export default function AdminSidebar() {
     <div className="flex flex-col h-full overflow-hidden">
       {/* Brand */}
       <div className="px-5 py-5 border-b border-white/[0.07] shrink-0">
-        <Link href="/admin/dashboard" onClick={() => setMobileOpen(false)} className="flex items-center gap-3">
-          <div className="w-9 h-9 bg-farmhouse-brown rounded-xl flex items-center justify-center shadow-md shrink-0">
-            <TreePine size={17} className="text-white" />
+        <Link href="/admin/dashboard" onClick={() => setMobileOpen(false)} className="flex flex-col items-start gap-2">
+          <div className="bg-white rounded-xl px-3 py-1.5">
+            <Image
+              src="/logo.webp"
+              alt="MB Farmhouse"
+              width={0}
+              height={0}
+              sizes="160px"
+              style={{ width: 'auto', height: '36px' }}
+              priority
+            />
           </div>
-          <div className="min-w-0">
-            <p className="font-serif text-[15px] font-bold text-white tracking-wide leading-tight truncate">MB Farmhouse</p>
-            <p className="text-[10px] text-white/30 tracking-widest uppercase mt-0.5">Admin Portal</p>
-          </div>
+          <p className="text-[10px] text-white/30 tracking-widest uppercase px-1">Admin Portal</p>
         </Link>
       </div>
 
@@ -112,7 +117,7 @@ export default function AdminSidebar() {
     <>
       {/* Mobile hamburger */}
       <button
-        className="lg:hidden fixed top-4 left-4 z-50 w-10 h-10 bg-[#1C1917] rounded-xl flex items-center justify-center text-white shadow-lg"
+        className="lg:hidden fixed top-4 left-4 z-50 w-10 h-10 bg-farmhouse-dark rounded-xl flex items-center justify-center text-white shadow-lg"
         onClick={() => setMobileOpen(!mobileOpen)}
         aria-label="Toggle sidebar"
       >
@@ -120,7 +125,7 @@ export default function AdminSidebar() {
       </button>
 
       {/* Desktop sidebar */}
-      <aside className="hidden lg:flex flex-col w-64 bg-[#1C1917] min-h-screen fixed left-0 top-0 bottom-0 z-40 border-r border-white/[0.05]">
+      <aside className="hidden lg:flex flex-col w-64 bg-farmhouse-dark min-h-screen fixed left-0 top-0 bottom-0 z-40 border-r border-white/[0.05]">
         {content}
       </aside>
 
@@ -131,7 +136,7 @@ export default function AdminSidebar() {
             className="lg:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40"
             onClick={() => setMobileOpen(false)}
           />
-          <aside className="lg:hidden flex flex-col w-64 bg-[#1C1917] fixed left-0 top-0 bottom-0 z-50">
+          <aside className="lg:hidden flex flex-col w-64 bg-farmhouse-dark fixed left-0 top-0 bottom-0 z-50">
             {content}
           </aside>
         </>

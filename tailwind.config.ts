@@ -10,16 +10,17 @@ const config: Config = {
     extend: {
       colors: {
         farmhouse: {
-          dark:    '#2C1A0E',
-          brown:   '#5C3D2E',
-          medium:  '#8B6347',
-          tan:     '#C4A882',
-          beige:   '#E8DDD0',
-          cream:   '#F5F0E8',
-          white:   '#FDFAF6',
-          green:   '#3D5A1F',
-          gold:    '#A07840',
-          muted:   '#9B8570',
+          dark:    '#122B1C',   // deep forest green — header/footer/sidebar bg
+          brown:   '#1C5E36',   // medium forest green — buttons, active states
+          medium:  '#3A8A5E',   // mid green — hover states
+          tan:     '#D4A800',   // logo gold — accent text & highlights
+          beige:   '#E6F2EB',   // light green-tinted — section backgrounds
+          cream:   '#F2FAF5',   // very light green — cards, inputs
+          white:   '#FAFFFE',   // near white — page base
+          green:   '#5A8C3F',   // palm green — icon accents
+          gold:    '#F5920C',   // sun orange — CTA highlights
+          muted:   '#6B8A75',   // sage gray — placeholder / secondary text
+          teal:    '#45B8CC',   // water teal — badges, links
         },
       },
       fontFamily: {

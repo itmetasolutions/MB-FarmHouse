@@ -34,7 +34,7 @@ export default async function AdminLayout({
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F3EF]">
+    <div className="min-h-screen bg-farmhouse-cream">
       <AdminSidebar />
       <div className="lg:ml-64">
         <AdminHeader userName={session.user?.name} userEmail={session.user?.email} />

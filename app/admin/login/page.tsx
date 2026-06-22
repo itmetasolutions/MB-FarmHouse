@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import { Eye, EyeOff, Lock, Mail, AlertCircle } from 'lucide-react'
@@ -37,9 +38,19 @@ export default function AdminLoginPage() {
     <div className="min-h-screen bg-farmhouse-dark flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         {/* Logo */}
-        <div className="text-center mb-10">
-          <p className="font-serif text-3xl font-bold text-white tracking-wider">MB FARMHOUSE</p>
-          <p className="text-farmhouse-tan text-xs tracking-[0.4em] uppercase mt-2">Admin Portal</p>
+        <div className="flex flex-col items-center mb-10">
+          <div className="bg-white rounded-2xl px-6 py-3 shadow-lg">
+            <Image
+              src="/logo.webp"
+              alt="MB Farmhouse"
+              width={0}
+              height={0}
+              sizes="200px"
+              style={{ width: 'auto', height: '56px' }}
+              priority
+            />
+          </div>
+          <p className="text-farmhouse-tan text-xs tracking-[0.4em] uppercase mt-4">Admin Portal</p>
         </div>
 
         {/* Card */}

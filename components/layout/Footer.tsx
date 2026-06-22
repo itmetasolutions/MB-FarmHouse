@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react'
 
 export default function Footer() {
@@ -11,9 +12,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="mb-6">
-              <h3 className="font-serif text-2xl font-bold text-white tracking-wider">MB FARMHOUSE</h3>
-              <p className="text-farmhouse-tan text-xs tracking-[0.3em] uppercase mt-1">Premium Venues</p>
+            <div className="mb-6 inline-block bg-white rounded-xl px-3 py-2">
+              <Image
+                src="/logo.webp"
+                alt="MB Farmhouse"
+                width={0}
+                height={0}
+                sizes="200px"
+                style={{ width: 'auto', height: '44px' }}
+              />
             </div>
             <p className="text-farmhouse-beige/70 text-sm leading-relaxed mb-6">
               Creating unforgettable moments in South Africa's most beautiful farmhouse venues.
