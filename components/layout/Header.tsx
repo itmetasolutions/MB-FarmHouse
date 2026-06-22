@@ -48,7 +48,7 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="block bg-white rounded-xl px-3 py-1.5">
+        <Link href="/" className="block">
           <Image
             src="/logo.webp"
             alt="MB Farmhouse"
@@ -75,16 +75,18 @@ export default function Header() {
                   <ChevronDown size={14} />
                 </button>
                 {dropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-48 bg-farmhouse-dark border border-farmhouse-brown shadow-xl">
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className="block px-5 py-3 text-sm text-farmhouse-cream hover:bg-farmhouse-brown hover:text-white transition-colors"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
+                  <div className="absolute top-full left-0 w-48 pt-2">
+                    <div className="bg-farmhouse-dark border border-farmhouse-brown shadow-xl">
+                      {link.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="block px-5 py-3 text-sm text-farmhouse-cream hover:bg-farmhouse-brown hover:text-white transition-colors"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
