@@ -33,7 +33,7 @@ export default function HeroBanner() {
             <p className="text-farmhouse-tan text-xs lg:text-sm font-medium tracking-[0.4em] uppercase mb-2 lg:mb-4">
               Welcome to MB Farmhouse
             </p>
-            <h1 className="font-serif text-[2rem] leading-[1.08] md:text-6xl lg:text-7xl text-white font-bold lg:leading-[1.05] mb-3 lg:mb-6 text-shadow-lg">
+            <h1 className="font-serif text-[2.75rem] leading-[1.08] md:text-6xl lg:text-7xl text-white font-bold lg:leading-[1.05] mb-3 lg:mb-6 text-shadow-lg">
               Where Every<br />
               <span className="text-farmhouse-tan italic">Celebration</span><br />
               Becomes a Memory
