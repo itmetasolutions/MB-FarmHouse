@@ -19,7 +19,7 @@ export default function EventCTA() {
           <div className="relative">
             <div className="relative h-[480px] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1519671282429-b8d070e96c3c?auto=format&fit=crop&w=1000&q=80"
+                src="/images/Farm One Images/Farm One Image (2).webp"
                 alt="Event Booking at MB Farmhouse"
                 fill
                 className="object-cover"
@@ -28,7 +28,7 @@ export default function EventCTA() {
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-6 -right-6 bg-farmhouse-brown text-farmhouse-cream p-6 w-40 text-center shadow-xl hidden sm:block">
-              <p className="font-serif text-3xl font-bold">4</p>
+              <p className="font-serif text-3xl font-bold">2</p>
               <p className="text-xs tracking-widest uppercase mt-1">Exclusive<br />Venues</p>
             </div>
           </div>

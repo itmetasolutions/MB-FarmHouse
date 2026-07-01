@@ -14,7 +14,7 @@ export default function PoolCTA() {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=2000&q=80"
+          src="/images/Farm One Images/Farm One Image (1).webp"
           alt="Pool Party at MB Farmhouse"
           fill
           className="object-cover"

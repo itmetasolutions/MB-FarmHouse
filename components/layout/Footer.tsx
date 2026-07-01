@@ -78,10 +78,8 @@ export default function Footer() {
               {[
                 { href: '/book-event', label: 'Event Booking' },
                 { href: '/book-pool', label: 'Pool Party Booking' },
-                { href: '/farmhouses#willows-estate', label: 'The Willows Estate' },
-                { href: '/farmhouses#sunset-barn', label: 'Sunset Barn' },
-                { href: '/farmhouses#orchard-house', label: 'The Orchard House' },
-                { href: '/farmhouses#meadow-haven', label: 'Meadow Haven' },
+                { href: '/farmhouses#mb-farm-1', label: 'MB Farm 1' },
+                { href: '/farmhouses#mb-farm-2', label: 'MB Farm 2' },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

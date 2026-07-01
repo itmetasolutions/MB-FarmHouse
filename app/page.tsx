@@ -22,7 +22,7 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-farmhouse-cream/20">
               {[
-                { num: '4', label: 'Premium Venues' },
+                { num: '2', label: 'Premium Venues' },
                 { num: '500+', label: 'Events Hosted' },
                 { num: '100%', label: 'Private Booking' },
                 { num: '5★', label: 'Client Rating' },
@@ -52,7 +52,7 @@ export default function HomePage() {
               Your Dream Event Starts Here
             </h2>
             <p className="section-subheading mb-10">
-              Browse our four exclusive farmhouse venues, choose your date, and secure your booking in minutes.
+              Browse our exclusive farmhouse venues, choose your date, and secure your booking in minutes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/book-event" className="btn-primary">Book an Event</Link>

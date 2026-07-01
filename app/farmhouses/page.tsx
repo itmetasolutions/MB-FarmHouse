@@ -9,7 +9,7 @@ import { Users, Check, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Our Farmhouses',
-  description: 'Explore our four exclusive farmhouse venues — each with its own unique theme, character, and charm.',
+  description: 'Explore our exclusive farmhouse venues — each with its own unique theme, character, and charm.',
 }
 
 export default function FarmhousesPage() {
@@ -35,7 +35,7 @@ export default function FarmhousesPage() {
               Exclusive Venues
             </p>
             <h1 className="font-serif text-4xl md:text-5xl text-white font-bold text-shadow">
-              Our Four Farmhouses
+              Our Farmhouses
             </h1>
           </div>
         </section>
@@ -44,9 +44,9 @@ export default function FarmhousesPage() {
         <div className="bg-farmhouse-cream py-12">
           <div className="max-w-3xl mx-auto text-center px-4">
             <p className="text-farmhouse-muted text-lg font-light leading-relaxed">
-              Nestled across South Africa's countryside, each of our four venues offers a distinct
-              atmosphere — from classic elegance to rustic charm and modern sophistication.
-              Every farmhouse is exclusively yours for the duration of your booking.
+              Each of our venues offers a distinct atmosphere — from the whimsical garden pool escape
+              of MB Farm 1 to the rock-grotto getaway of MB Farm 2. Every farmhouse is exclusively
+              yours for the duration of your booking.
             </p>
           </div>
         </div>

@@ -12,7 +12,7 @@ export default function FarmhouseOverview() {
           <p className="text-farmhouse-tan text-xs font-semibold tracking-[0.4em] uppercase mb-4">
             Our Exclusive Venues
           </p>
-          <h2 className="section-heading mb-4">Four Unique Farmhouses</h2>
+          <h2 className="section-heading mb-4">Our Farmhouses</h2>
           <p className="section-subheading max-w-2xl mx-auto">
             Each venue tells its own story — choose the one that speaks to your event's soul.
           </p>

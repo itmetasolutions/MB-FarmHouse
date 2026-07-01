@@ -3,12 +3,12 @@ import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 
 const previewImages = [
-  { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80', alt: 'Farmhouse exterior', span: 'col-span-2 row-span-2' },
-  { src: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=400&q=80', alt: 'Pool area', span: '' },
-  { src: 'https://images.unsplash.com/photo-1519671282429-b8d070e96c3c?auto=format&fit=crop&w=400&q=80', alt: 'Event setup', span: '' },
-  { src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=400&q=80', alt: 'Outdoor dining', span: '' },
-  { src: 'https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=400&q=80', alt: 'Garden area', span: '' },
-  { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=400&q=80', alt: 'Modern interior', span: '' },
+  { src: '/images/Farm One Images/Farm One Image (5).webp', alt: 'MB Farm 1 pool and lawn', span: 'col-span-2 row-span-2' },
+  { src: '/images/Farm Two Images/Farm Two Image (13).webp', alt: 'MB Farm 2 pool', span: '' },
+  { src: '/images/Farm One Images/Farm One Image (9).webp', alt: 'MB Farm 1 pool party wall', span: '' },
+  { src: '/images/Farm Two Images/Farm Two Image (12).webp', alt: 'MB Farm 2 jacuzzi at night', span: '' },
+  { src: '/images/Farm One Images/Farm One Image (10).webp', alt: 'MB Farm 1 garden lounge', span: '' },
+  { src: '/images/Farm Two Images/Farm Two Image (8).webp', alt: 'MB Farm 2 cave lounge room', span: '' },
 ]
 
 export default function GalleryPreview() {

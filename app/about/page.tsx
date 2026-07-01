@@ -63,12 +63,11 @@ export default function AboutPage() {
                   <p>
                     MB Farmhouse was born from a deep love of South Africa's countryside and a passion for
                     creating spaces where families, friends, and communities come together to celebrate life.
-                    What started as a single heritage property has grown into four distinct, premium farmhouse venues.
+                    What started as a single heritage property has grown into distinct, premium farmhouse venues.
                   </p>
                   <p>
                     Each of our venues has been carefully curated to offer a unique experience — whether you seek
-                    the timeless elegance of The Willows Estate, the rustic warmth of Sunset Barn, the natural
-                    beauty of The Orchard House, or the contemporary charm of Meadow Haven.
+                    the whimsical garden pool escape of MB Farm 1 or the fantasy rock-grotto getaway of MB Farm 2.
                   </p>
                   <p>
                     We believe that your celebrations deserve more than a generic event space. Our venues offer
@@ -79,7 +78,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="relative h-[440px] overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=80"
+                    src="/images/Farm Two Images/Farm Two Image (17).webp"
                     alt="MB Farmhouse grounds"
                     fill
                     className="object-cover"
