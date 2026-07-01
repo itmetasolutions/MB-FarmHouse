@@ -27,7 +27,7 @@ export default function FarmhouseOverview() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {FARMHOUSES.map((fh, idx) => (
             <Link key={fh.id} href={`/farmhouses#${fh.slug}`} className="group card-farmhouse block">
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-96 overflow-hidden">
                 <Image
                   src={fh.image_url}
                   alt={fh.name}

@@ -28,7 +28,7 @@ export default function FarmhouseSelect({ selected, onSelect }: Props) {
                 : 'border-farmhouse-beige hover:border-farmhouse-tan hover:shadow-md'
             )}
           >
-            <div className="relative h-44 overflow-hidden">
+            <div className="relative h-64 overflow-hidden">
               <Image
                 src={fh.image_url}
                 alt={fh.name}

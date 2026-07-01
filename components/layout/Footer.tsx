@@ -12,13 +12,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="mb-6 inline-block bg-white rounded-xl px-3 py-2">
+            <div className="mb-6 inline-block">
               <Image
                 src="/logo.webp"
                 alt="MB Farmhouse"
                 width={0}
                 height={0}
                 sizes="200px"
+                className="brightness-0 invert"
                 style={{ width: 'auto', height: '44px' }}
               />
             </div>
